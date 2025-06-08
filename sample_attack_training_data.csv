@@ -1,0 +1,16 @@
+username,password,label
+admin,123456,Brute Force
+root,toor,Brute Force
+guest,guest,Brute Force
+admin,admin123,Brute Force
+testuser,password1,Brute Force
+sql,' OR '1'='1,SQL Injection
+nmap,nmapscan,Recon Tool
+admin,admin,Brute Force
+admin,password,Brute Force
+admin,letmein,Brute Force
+support,helpdesk,Recon Social
+support,support,Recon Social
+NULL,NULL,Null Input
+root,changeme,Brute Force
+root,root,Brute Force

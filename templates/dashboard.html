@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HoneySage Dashboard</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+  <style>
+    #intrusionPie {
+      max-width: 300px;
+      max-height: 300px;
+      margin: 0 auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>HoneySage Intrusion Dashboard</h1>
+    <p id="latest-alert" class="intrusion-alert">No alerts yet.</p>
+
+    <div>
+      <canvas id="intrusionPie"></canvas>
+    </div>
+    <div>
+      <canvas id="timeSeries" width="600" height="300"></canvas>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Timestamp</th>
+          <th>IP</th>
+          <th>Username</th>
+          <th>Password</th>
+          <th>Label</th>
+        </tr>
+      </thead>
+      <tbody id="logBody">
+        <!-- Logs will be injected here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="/static/dashboard.js"></script>
+</body>
+</html>
